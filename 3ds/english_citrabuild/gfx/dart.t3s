@@ -1,0 +1,4 @@
+--atlas -f rgba5551 -z auto
+Dart/Main.png
+Dart/Active.png
+Dart/Inactive.png

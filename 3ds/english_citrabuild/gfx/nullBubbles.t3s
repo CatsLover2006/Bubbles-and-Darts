@@ -1,0 +1,4 @@
+--atlas -f rgba8888 -z auto
+Bubble_Undefined/Main.png
+Bubble_Undefined/Pop.png
+Pop_Anim_16px.png
