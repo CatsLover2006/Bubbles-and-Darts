@@ -400,7 +400,7 @@ int main(int argc, char* argv[]) {
     C2D_Text exitGOText;
 
     // Save data
-    FILE* saveData = fopen("saveData.txt","r");
+    FILE* saveData = fopen("saves/bubblesAndDarts.txt","r");
 
     if (saveData != NULL && fscanf(saveData, "%u~", &saveVersion) == 1) {
     	if (saveVersion == 2) {
@@ -425,7 +425,7 @@ int main(int argc, char* argv[]) {
         }
     }
     fclose(saveData);
-    saveData = fopen("saveData.txt", "w");
+    saveData = fopen("saves/bubblesAndDarts.txt", "w");
     fprintf(saveData, "%u~%llx|%llu;", currentSaveVersion, ~highScore, ~totalDartsShot);
     fclose(saveData);
 
@@ -667,7 +667,7 @@ int main(int argc, char* argv[]) {
         case inMenu: {
         	if (initialSwitchStuff) {
         		// Save
-        		saveData = fopen("saveData.txt", "w");
+        		saveData = fopen("saves/bubblesAndDarts.txt", "w");
     			fprintf(saveData, "%u~%llx|%llu;", currentSaveVersion, ~highScore, ~totalDartsShot);
     			fclose(saveData);
     			initialSwitchStuff = false;
@@ -962,7 +962,7 @@ int main(int argc, char* argv[]) {
     C2D_FontFree(mediumFont);
 
     // Save data
-    saveData = fopen("saveData.txt", "w");
+    saveData = fopen("saves/bubblesAndDarts.txt", "w");
     fprintf(saveData, "%u~%llx|%llu;", currentSaveVersion, ~highScore, ~totalDartsShot);
     fclose(saveData);
 
