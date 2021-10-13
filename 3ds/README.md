@@ -6,7 +6,7 @@ Use citrabuild versions if you are playing on Citra\
 Uses libctru, citro2d and devkitpro
 
 ### Building on Linux / macOS
-Run the following command: ```for dir in ./*/; do (cd "$dir" && make); done```
+In the same directory as this README, run the following command: ```for dir in ./*/; do (cd "$dir" && make); done```
 
 ### Building on Windows
 -- todo --
