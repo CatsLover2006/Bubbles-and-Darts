@@ -1,4 +1,5 @@
 # Bubbles and Darts
+Version 0.9
 
 ## 3DS Version
 Choose the language you want\
