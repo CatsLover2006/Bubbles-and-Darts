@@ -10,4 +10,9 @@ Uses libctru, citro2d and devkitpro
 In the same directory as this README, run the following command: ```for dir in ./*/; do (cd "$dir" && make); done```
 
 ### Building on Windows
--- todo --
+TODO
+
+## Todo
+- Add audio functions
+- More languages
+- Add Windows build instructions
